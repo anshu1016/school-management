@@ -20,7 +20,7 @@ export default function Header() {
           Class view
         </NavLink>
         <a
-          href="https://github.com/anshu1016"
+          href="https://github.com/anshu1016/school-management"
           target="_blank"
           rel="noopener noreferrer"
           className="nav-link"
@@ -28,7 +28,7 @@ export default function Header() {
           <GitHubIcon />
         </a>
         <a
-          href="https://github.com/anshu1016"
+          href="https://school-management-d6sj.onrender.com/students"
           target="_blank"
           rel="noopener noreferrer"
           className="nav-link"
