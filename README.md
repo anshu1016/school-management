@@ -6,6 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+## Live App: https://as-school-management-app.vercel.app/
+## API LINK: https://school-management-d6sj.onrender.com/students or https://school-management-d6sj.onrender.com/teachers
+
 ### `npm start`
 
 Runs the app in the development mode.\
