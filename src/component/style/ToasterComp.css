@@ -1,0 +1,23 @@
+/* ToasterComp.css */
+
+/* Override default toast styles */
+.react-hot-toast-toast {
+    border-radius: 8px;
+  }
+  
+  /* Style for success toast */
+  .react-hot-toast-success {
+    background-color: green;
+    color: #fff;
+    border: 1px solid black;
+  }
+  
+  /* Style for default toast */
+  .react-hot-toast-default {
+    background-color: #111;
+    color: #fff;
+    border: 1px solid black;
+  }
+  
+  /* Other styles as needed */
+  

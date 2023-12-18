@@ -1,0 +1,35 @@
+/* Add your existing styles or customize as needed */
+
+.header {
+    background-color: #3498db;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    width: 100%; /* Set the width to 100% */
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav {
+    display: flex;
+  }
+  
+  .nav a {
+    margin-right: 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav a:hover {
+    color: #ecf0f1;
+  }
+  
+  .active-link {
+    color: #ecf0f1;
+  }

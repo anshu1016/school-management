@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import {Routes, Route} from 'react-router-dom'
+import Dashboard from './features/Dashboard';
+import Teachers from './features/teachers/Teachers';
+import Students from './features/students/Student';
+import Header from './component/Header';
+import {useSelector} from 'react-redux'
+import Class from './features/class/Class';
+import ShowDetails from './component/ShowDetails';
+import { something } from '@emotion/react';
+
+import ToasterComp from './component/Toaster';
+import {toast} from 'react-hot-toast'
 function App() {
+  const {error} = useSelector((state)=>state?.students)  
+  const {error:teacherError} = useSelector(state=> state?.teachers)
+  if(error||teacherError ){
+    toast.error(error?.message ?? teacherError.error ?? "Something went wrong")
+  }
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <header>
+      <Header />
+    </header>
+    <main>
+  <Routes>
+    <Route path='/' element={<Dashboard />} />
+    <Route path='/teachers' element={<Teachers />} />
+    <Route path='/students' element={<Students />} />
+    <Route path="/class" element={<Class />  } />
+    <Route path='/:type/:id' element={<ShowDetails/>} />
+  </Routes>
+<ToasterComp />
+    </main>
+
     </div>
   );
 }

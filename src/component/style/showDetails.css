@@ -1,0 +1,54 @@
+/* ShowDetails.css */
+
+.detailsCard {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h3 {
+    color: #333;
+  }
+  
+  h4 {
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  .loader {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin: 20px 0;
+    animation: spin 1s linear infinite;
+  }
+  
+  button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2075c1;
+  }
+  
+  .formToUpdate {
+    margin-top: 20px;
+  }
+  
+  /* Optional: Modal styles */
+  .MuiPaper-root {
+    outline: none; /* Remove default modal outline */
+  }
+  
